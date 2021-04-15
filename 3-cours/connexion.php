@@ -13,7 +13,7 @@ try {
     $email = $_GET['email'];
     $statement = $pdo->query("SELECT * from user where email = '$email'");
     $user = $statement->fetch();
-    // var_dump($user);
+    var_dump($user);
     print_r($user);
 } catch (PDOException $e) {
     $error = $e->getMessage();
