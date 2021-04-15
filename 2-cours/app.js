@@ -8,7 +8,13 @@ $(document).ready(function () {
         dataType: "json",
         success: function (response) {
           console.log(response);
-          $(".resultatRecherche").append(response[1].nom);
+          // $(".resultatRecherche").append(response[1].nom);
+          $i = 0;
+          while ($i < response.length) {
+            $(".resultatRecherche").append(response[$i].nom + "<br>");
+            $(".resultatRecherche").append(response[$i].prenom + "<br>");
+            $i++;
+          }
         },
       });
     })
