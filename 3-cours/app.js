@@ -7,6 +7,8 @@ $(document).ready(function () {
       data: "email=" + $(".email").val() + "&password=" + $(".password").val(),
       dataType: "html",
       success: function (response) {
+        $(".resultatRecherche").append(response);
+        $(".userConnexion").hide();
         console.log(response);
       },
       error: function () {
