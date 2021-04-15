@@ -8,7 +8,7 @@ $(document).ready(function () {
         dataType: "json",
         success: function (response) {
           console.log(response);
-          $(".resultatRecherche").append(response);
+          $(".resultatRecherche").append(response[1].nom);
         },
       });
     })
