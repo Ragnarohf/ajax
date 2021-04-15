@@ -1,5 +1,13 @@
-{
+[
+    {
     "nom":"dupont",
     "prenom":"michel",
     "donnee":[0,1,4]
-}
+    },
+    
+    {
+    "nom": "dina",
+    "prenom":"lola",
+    "donne":[0,1,4]
+    }
+]
