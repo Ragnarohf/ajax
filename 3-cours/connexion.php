@@ -14,8 +14,8 @@ try {
         'email' => $email
     ]);
     $user = $statement->fetch();
-    var_dump($user['pwd']);
-    var_dump(password_verify($_GET['password'], $user['pwd']));
+    // var_dump($user['pwd']);
+    // var_dump(password_verify($_GET['password'], $user['pwd']));
     if (password_verify($_GET['password'], $user['pwd'])) {
         echo "welcome in your profil";
     } else {

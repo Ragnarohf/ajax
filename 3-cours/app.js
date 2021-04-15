@@ -8,8 +8,15 @@ $(document).ready(function () {
       dataType: "html",
       success: function (response) {
         console.log(response);
-        $(".resultatRecherche").append(response);
-        $(".userConnexion").hide();
+        if (response == "welcome in your profil") {
+          $(".resultatRecherche").append(response);
+          $(".userConnexion").hide();
+        }
+        if (response == "erreur de connexion") {
+          console.log(response);
+          $(".resultatRecherche").append(response);
+          $(".userConnexion").show();
+        }
       },
       error: function () {
         console.log("error");
