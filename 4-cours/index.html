@@ -9,6 +9,11 @@
       href="https://bootswatch.com/4/pulse/bootstrap.min.css"
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"
+    ></script>
     <script src="app.js"></script>
     <title>Autocompletion</title>
   </head>
@@ -19,15 +24,15 @@
     }
   </style>
   <body>
-    <form action="" method="POST" class="userConnexion">
+    <form action="" method="POST" id="formRecherche">
       <div class="form-group">
         <label for="exampleInputEmail1">State :</label>
         <input
           type="text"
           name="state"
-          class="form-control email"
+          class="form-control state"
           id="exampleInputEmail1"
-          placeholder="Enter email"
+          placeholder="Enter your state"
         />
       </div>
 
