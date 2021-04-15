@@ -9,7 +9,7 @@ $(document).ready(function () {
       success: function (response) {
         $(".resultatRecherche").append(response);
         $(".userConnexion").hide();
-        console.log(response);
+        // console.log(response);
       },
       error: function () {
         console.log("error");
