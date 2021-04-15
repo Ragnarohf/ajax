@@ -1,0 +1,16 @@
+#formRecherche{
+    width: 60%;
+    margin: 10%;
+    display: flex;
+}
+.btn-success{
+    /* margin: 20px; */
+   
+    margin-left: 40px;
+}
+
+.form-control{
+    width: 40%;
+    
+}
+

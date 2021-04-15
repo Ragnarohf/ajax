@@ -20,9 +20,12 @@ $(document).ready(function () {
         minLength: 1,
         select: function (ui) {
           $("input.state").val(ui.item.value);
-          $("formRecherche").submit();
+          $("#formRecherche").submit();
         },
       });
+    },
+    error: function () {
+      console.log("error");
     },
   });
 });
