@@ -16,15 +16,14 @@ try {
     $user = $statement->fetch();
     // var_dump($user['pwd']);
     // var_dump(password_verify($_GET['password'], $user['pwd']));
-    if (password_verify($_GET['password'], $user['pwd'])) {
-        echo "welcome in your profil";
-    } else {
-        echo "erreur de connexion";
-    }
+    // if (password_verify($_GET['password'], $user['pwd'])) {
+    //     echo "welcome in your profil";
+    // } else {
+    //     echo "erreur de connexion";
+    // }
     // 
     // print_r($user);
-
-
+    echo json_encode($user);
 } catch (PDOException $e) {
     $error = $e->getMessage();
 }
