@@ -4,9 +4,14 @@ $(document).ready(function () {
     $.ajax({
       type: "GET",
       url: "connexion.php",
-      data: "data",
-      dataType: "dataType",
-      success: function (response) {},
+      data: "email=" + $(".email").val() + "&password=" + $(".password").val(),
+      dataType: "html",
+      success: function (response) {
+        console.log(response);
+      },
+      error: function () {
+        console.log("error");
+      },
     });
   });
 });
